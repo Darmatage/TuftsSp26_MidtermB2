@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: bf385591d649ec243a8abb3bb18e1082
+guid: 8364f91498569824ebb18c125e2d523f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7871739146467375055
-    second: wallfloortilesuncle_0
+      213: -652242192864260221
+    second: room1furn_0
   - first:
-      213: -6654341831066848634
-    second: wallfloortilesuncle_1
+      213: 9212473109020692296
+    second: room1furn_1
   - first:
-      213: -7794806778709980208
-    second: wallfloortilesuncle_2
+      213: -4169599411904777560
+    second: room1furn_2
   - first:
-      213: -2545278516410169415
-    second: wallfloortilesuncle_3
+      213: -7343455766839512667
+    second: room1furn_3
   - first:
-      213: -815015831101990612
-    second: wallfloortilesuncle_4
+      213: 1628493554670553577
+    second: room1furn_4
   - first:
-      213: 6591974206377251647
-    second: wallfloortilesuncle_5
+      213: -5611259705729330558
+    second: room1furn_5
   - first:
-      213: 8335452476126895964
-    second: wallfloortilesuncle_6
+      213: -8405680792193533834
+    second: room1furn_6
+  - first:
+      213: -7359194806487322313
+    second: room1furn_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +96,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,79 +134,123 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wallfloortilesuncle_0
+      name: room1furn_0
       rect:
         serializedVersion: 2
-        x: 67
-        y: 322
-        width: 20
+        x: 303
+        y: 439
+        width: 51
         height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fcdca6e25c2f6f0800000000000000
+      internalID: -652242192864260221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 428
+        width: 23
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f440e9b7749df70800000000000000
+      internalID: 9212473109020692296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 444
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2fcb52d6b9226c0800000000000000
+      internalID: -4169599411904777560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 376
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1bcb923edc61a90800000000000000
+      internalID: -7343455766839512667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 28
+        height: 27
       alignment: 9
-      pivot: {x: 0, y: 0.3214286}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.46428573, y: 0.4074074}
+      border: {x: 0, y: 0, z: 0, w: 2}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 138864ad3f6f1c290800000000000000
-      internalID: -7871739146467375055
+      spriteID: 9e9c6258242999610800000000000000
+      internalID: 1628493554670553577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wallfloortilesuncle_1
+      name: room1furn_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 288
-        width: 20
-        height: 28
-      alignment: 9
-      pivot: {x: 0, y: 0.32142857}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 682fc316c5707a3a0800000000000000
-      internalID: -6654341831066848634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wallfloortilesuncle_2
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 254
-        width: 20
-        height: 28
-      alignment: 9
-      pivot: {x: 0, y: 0.32142857}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0db4f2e888843d390800000000000000
-      internalID: -7794806778709980208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wallfloortilesuncle_3
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 169
-        width: 36
-        height: 20
+        x: 231
+        y: 329
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b740febcaa5dacd0800000000000000
-      internalID: -2545278516410169415
+      spriteID: 2825a81070dc022b0800000000000000
+      internalID: -5611259705729330558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wallfloortilesuncle_4
+      name: room1furn_6
       rect:
         serializedVersion: 2
-        x: 255
-        y: 169
-        width: 36
-        height: 20
+        x: 101
+        y: 220
+        width: 176
+        height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2998d47b6b70b4f0800000000000000
-      internalID: -815015831101990612
+      spriteID: 678fafdcad5095b80800000000000000
+      internalID: -8405680792193533834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wallfloortilesuncle_5
+      name: room1furn_7
       rect:
         serializedVersion: 2
-        x: 289
-        y: 186
-        width: 36
-        height: 20
+        x: 219
+        y: 160
+        width: 176
+        height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,30 +303,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3357ab6d956b7b50800000000000000
-      internalID: 6591974206377251647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wallfloortilesuncle_6
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 152
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5f91b92dd97da370800000000000000
-      internalID: 8335452476126895964
+      spriteID: 7317c6e6053eed990800000000000000
+      internalID: -7359194806487322313
       vertices: []
       indices: 
       edges: []
@@ -288,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 44e58fa25d45eb045aacfb9475e90756
+    spriteID: 2e874e73fc3fbb14aa598550605d1c79
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wallfloortilesuncle_0: -7871739146467375055
-      wallfloortilesuncle_1: -6654341831066848634
-      wallfloortilesuncle_2: -7794806778709980208
-      wallfloortilesuncle_3: -2545278516410169415
-      wallfloortilesuncle_4: -815015831101990612
-      wallfloortilesuncle_5: 6591974206377251647
-      wallfloortilesuncle_6: 8335452476126895964
+      room1furn_0: -652242192864260221
+      room1furn_1: 9212473109020692296
+      room1furn_2: -4169599411904777560
+      room1furn_3: -7343455766839512667
+      room1furn_4: 1628493554670553577
+      room1furn_5: -5611259705729330558
+      room1furn_6: -8405680792193533834
+      room1furn_7: -7359194806487322313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
