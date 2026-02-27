@@ -94,8 +94,6 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: dbb397fd4e1e53d4f816551d541788c9, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: ce3ed13f255489b49bfdf8d21989e26c, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -2545278516410169415, guid: bf385591d649ec243a8abb3bb18e1082, type: 3}
@@ -105,8 +103,6 @@ Tilemap:
     m_Data: {fileID: 6591974206377251647, guid: bf385591d649ec243a8abb3bb18e1082, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -815015831101990612, guid: bf385591d649ec243a8abb3bb18e1082, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 4
     m_Data:
@@ -133,7 +129,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 6, y: -5, z: 0}
-  m_Size: {x: 4, y: 8, z: 1}
+  m_Size: {x: 4, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -436,7 +432,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1930963995847291602
+--- !u!114 &1238002239302059767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
