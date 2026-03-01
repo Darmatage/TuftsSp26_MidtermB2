@@ -14,25 +14,18 @@ public class Floor : MonoBehaviour
         grid = GetComponent<Grid>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 worldMouse = Camera.main.ScreenToWorldPoint(mousePos);
-        bed.position = GetPlacementPos(worldMouse, new Vector2Int(3, 4));
-    }
-
     // Returns <-1, -1> if there is no valid placement
     public Vector2 GetPlacementPos(Vector2 position, Vector2Int size)
     {
         Vector2Int gridPos = Vector3To2(grid.WorldToCell(position));
+        // gridPos += size / 2;
 
-        if (0 <= gridPos.x && gridPos.x + size.x < dimensions.x && 0 <= gridPos.y && gridPos.y + size.y < dimensions.y)
+        if (0 <= gridPos.x && gridPos.x + size.x <= dimensions.x && 0 <= gridPos.y && gridPos.y + size.y <= dimensions.y)
         {
-            Vector2 left = grid.CellToWorld(Vector2To3(gridPos));
-            Vector2 right = grid.CellToWorld(Vector2To3(gridPos + size));
+            Vector2 pos = grid.CellToWorld(Vector2To3(gridPos));
+            pos += new Vector2(size.x / 6f, size.y / 2f);
 
-            return (left + right) / 2;
+            return pos;
         }
 
         return new Vector2(-1, -1);
