@@ -14,6 +14,7 @@ public class GameHandler : MonoBehaviour {
 
 	public int currentFengScore = 0;
 	public TMP_Text scoreText;
+    public TextMeshProUGUI ResponseText;
 
       private string sceneName;
       public static string lastLevelDied;  //allows replaying the Level where you died
@@ -29,6 +30,7 @@ public class GameHandler : MonoBehaviour {
 
 	public void CheckAllFung()
 	{
+        string responseMessage = "";
 		currentFengScore = 0;
 		//check the beds
 		if (GameObject.FindWithTag("item_Bed") != null)
@@ -52,12 +54,16 @@ public class GameHandler : MonoBehaviour {
 			bookshelf.CheckFung();
 			int bookshelfScore = bookshelf.thisScore;
 			currentFengScore += bookshelfScore;
-			Debug.Log("BOOKSHELF is: under window? " + bookshelf.isUnderWindow + 
-			", against a Wall?" + bookshelf.isAgainstWall);
-		}
-		
-		//check for plants
-		if (GameObject.FindWithTag("item_Plant") != null)
+            responseMessage += "BED:\n";
+            responseMessage += "Under window? " + bed.isUnderWindow + "\n";
+            responseMessage += "Across from door? " + bed.isAcrossFromDoor + "\n";
+            responseMessage += "Across from mirror? " + bed.isAcrossMirror + "\n";
+            responseMessage += "Against wall? " + bed.isAgainstWall + "\n\n";
+
+        }
+
+        //check for plants
+        if (GameObject.FindWithTag("item_Plant") != null)
 		{ 
 			item_Plant myPlant = GameObject.FindWithTag("item_Plant").GetComponent<item_Plant>();
 			if (myPlant.isOnFloor)

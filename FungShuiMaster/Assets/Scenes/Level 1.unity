@@ -298,6 +298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoneyCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4363969596001579388, guid: 7cd309fa3e4cc4c44a2ffbd0b139926a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -664,7 +668,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 4.9583335
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -752,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.PixelPerfectCamera
   m_ComponentVersion: 1
-  m_AssetsPPU: 72
+  m_AssetsPPU: 36
   m_RefResolutionX: 1280
   m_RefResolutionY: 720
   m_CropFrame: 0
