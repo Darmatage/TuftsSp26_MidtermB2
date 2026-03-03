@@ -5,12 +5,10 @@ using System.Collections.Generic;
 public class item_Bookshelf : MonoBehaviour
 {
 
-	public int thisScore = 10;
-	public string BookshelfType = "white";
-
-    public bool isOnFloor = false;
     public bool isUnderWindow = false;
     public bool isAgainstWall = false;
+
+    public int thisScore = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,10 +28,6 @@ public class item_Bookshelf : MonoBehaviour
             isAgainstWall = true;
         }
 
-        if (other.gameObject.tag == "floor")
-        {
-            isOnFloor = true;
-        }
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -47,24 +41,23 @@ public class item_Bookshelf : MonoBehaviour
             isAgainstWall = false;
         }
 
-        if (other.gameObject.tag == "floor")
-        {
-            isOnFloor = false;
-        }
+    
     }
+    
 
-    public void CheckFung()
-    {
-        thisScore = 0;
-        if (isUnderWindow) { thisScore -= 10; }
-        else{thisScore = 0;}
+   public void CheckFung()
+	{
+		thisScore = 0;
+		if (isUnderWindow){thisScore -= 20;} 
+		//else{thisScore += 20;}
 
-        if (isAgainstWall) { thisScore += 30; }
-        else{thisScore -= 10;}
+
+		if (isAgainstWall){thisScore += 20;} 
+		//else{thisScore -= 20;}
 
     }
-
-
 
 }
+
+
 

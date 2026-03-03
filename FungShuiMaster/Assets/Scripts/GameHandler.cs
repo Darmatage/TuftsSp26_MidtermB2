@@ -45,24 +45,17 @@ public class GameHandler : MonoBehaviour {
 
 		//check the mirror
 
-            //check the bookself
-            if (GameObject.FindWithTag("item_Bookshelf") != null)
+         //check the bookself
+        if (GameObject.FindWithTag("item_Bookshelf") != null)
 		{ 
-			item_Bookshelf Bookshelf = GameObject.FindWithTag("item_Bookshelf").GetComponent<item_Bookshelf>();
-            Bookshelf.CheckFung();
-            int BookshelfScore = Bookshelf.thisScore;
-            currentFengScore += BookshelfScore;
-            Debug.Log("BOOKSHELF is: under window? " + Bookshelf.isUnderWindow + ", against a Wall?" + Bookshelf.isAgainstWall);
-			if (Bookshelf.isOnFloor)
-			{
-				currentFengScore +=10;
-				string BookshelfType = Bookshelf.BookshelfType;
-				Debug.Log("BOOKSHELF type: " + BookshelfType);
-			}
-			else {currentFengScore -=10;}
+			item_Bookshelf bookshelf = GameObject.FindWithTag("item_Bookshelf").GetComponent<item_Bookshelf>();
+			bookshelf.CheckFung();
+			int bookshelfScore = bookshelf.thisScore;
+			currentFengScore += bookshelfScore;
+			Debug.Log("BOOKSHELF is: under window? " + bookshelf.isUnderWindow + 
+			", against a Wall?" + bookshelf.isAgainstWall);
 		}
-		else {currentFengScore -=10;}
-
+		
 		//check for plants
 		if (GameObject.FindWithTag("item_Plant") != null)
 		{ 
