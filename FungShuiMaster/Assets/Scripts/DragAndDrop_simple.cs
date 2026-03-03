@@ -22,46 +22,27 @@ public class DragAndDrop_simple : MonoBehaviour
 
     void Update()
     {
-        if (selected == true)
+        if (selected)
         {
-            Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = new Vector2(cursorPos.x, cursorPos.y);
+            Vector3 mousePos = Input.mousePosition;
+
+            // This is critical in 2D
+            mousePos.z = Mathf.Abs(Camera.main.transform.position.z);
+
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+            // Preserve original Z so it doesn't disappear
+            worldPos.z = transform.position.z;
+
+            transform.position = worldPos;
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             selected = false;
         }
-
-        if (hovering) { 
-			/*
-        if (Input.GetKeyDown("up"))
-        {
-            currentDirection = 3; //Upper Left
-            ChangeDirection();
-        }
-
-        if (Input.GetKeyDown("down"))
-        {
-            currentDirection = 1; //Lower Left
-            ChangeDirection();
-        }
-
-        if (Input.GetKeyDown("left"))
-        {
-            currentDirection = 0; //Lower Right
-            ChangeDirection();
-        }
-
-        if (Input.GetKeyDown("right"))
-        {
-            currentDirection = 2; //Upper Right
-            ChangeDirection();
-        }
-		*/
     }
 
-    }
 
     void OnMouseOver()
     {

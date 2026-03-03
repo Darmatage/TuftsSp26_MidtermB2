@@ -12,6 +12,7 @@ TagManager:
   - item_Plant
   - floor
   - item_Bookshelf
+  - item_Rug
   layers:
   - Default
   - TransparentFX

@@ -48,12 +48,16 @@ public class GameHandler : MonoBehaviour {
             //check the bookself
             if (GameObject.FindWithTag("item_Bookshelf") != null)
 		{ 
-			item_Bookshelf myBookshelf = GameObject.FindWithTag("item_Bookshelf").GetComponent<item_Bookshelf>();
-			if (myBookshelf.isOnFloor)
+			item_Bookshelf Bookshelf = GameObject.FindWithTag("item_Bookshelf").GetComponent<item_Bookshelf>();
+            Bookshelf.CheckFung();
+            int BookshelfScore = Bookshelf.thisScore;
+            currentFengScore += BookshelfScore;
+            Debug.Log("BOOKSHELF is: under window? " + Bookshelf.isUnderWindow + ", against a Wall?" + Bookshelf.isAgainstWall);
+			if (Bookshelf.isOnFloor)
 			{
 				currentFengScore +=10;
-				string myBookshelfType = myBookshelf.BookshelfType;
-				Debug.Log("BOOKSHELF type: " + myBookshelfType);
+				string BookshelfType = Bookshelf.BookshelfType;
+				Debug.Log("BOOKSHELF type: " + BookshelfType);
 			}
 			else {currentFengScore -=10;}
 		}
@@ -72,9 +76,23 @@ public class GameHandler : MonoBehaviour {
 			else {currentFengScore -=20;}
 		}
 		else {currentFengScore -=20;}
-		
-		//Display new score:
-		updateStatsDisplay();
+
+        //check for rug
+        if (GameObject.FindWithTag("item_Rug") != null)
+        {
+            item_Rug myRug = GameObject.FindWithTag("item_Rug").GetComponent<item_Rug>();
+            if (myRug.isOnFloor)
+            {
+                currentFengScore += 10;
+                string myRugType = myRug.RugType;
+                Debug.Log("Rug type: " + myRugType);
+            }
+            else { currentFengScore -= 10; }
+        }
+        else { currentFengScore -= 10; }
+
+        //Display new score:
+        updateStatsDisplay();
 	}
 
 	public void updateStatsDisplay(){
