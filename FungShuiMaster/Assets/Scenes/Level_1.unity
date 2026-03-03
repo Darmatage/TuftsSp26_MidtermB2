@@ -2651,7 +2651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '???
+  m_text: 'Click ''Check my Feng'' to get feedback on this room!
 
 '
   m_isRightToLeft: 0
@@ -4174,7 +4174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Check my Fung
+  m_text: Check my Feng
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5344,7 +5344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentFengScore: 0
   scoreText: {fileID: 1266036753300535026}
-  ResponseText: {fileID: 0}
+  ResponseText: {fileID: 2134812374}
 --- !u!1 &8412206637531095325
 GameObject:
   m_ObjectHideFlags: 0
