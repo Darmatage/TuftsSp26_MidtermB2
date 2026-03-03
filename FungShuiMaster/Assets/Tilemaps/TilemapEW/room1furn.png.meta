@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -161,8 +161,8 @@ TextureImporter:
         serializedVersion: 2
         x: 370
         y: 428
-        width: 23
-        height: 58
+        width: 43
+        height: 67
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,28 +173,6 @@ TextureImporter:
       bones: []
       spriteID: 84f440e9b7749df70800000000000000
       internalID: 9212473109020692296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: room1furn_2
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 444
-        width: 21
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8a2fcb52d6b9226c0800000000000000
-      internalID: -4169599411904777560
       vertices: []
       indices: 
       edges: []
@@ -226,7 +204,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 352
+        y: 351
         width: 28
         height: 27
       alignment: 9
@@ -269,7 +247,7 @@ TextureImporter:
       name: room1furn_6
       rect:
         serializedVersion: 2
-        x: 101
+        x: 33
         y: 220
         width: 176
         height: 89
@@ -291,12 +269,12 @@ TextureImporter:
       name: room1furn_7
       rect:
         serializedVersion: 2
-        x: 219
-        y: 160
+        x: 65
+        y: 116
         width: 176
         height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5227273, y: 0.47191012}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -305,6 +283,72 @@ TextureImporter:
       bones: []
       spriteID: 7317c6e6053eed990800000000000000
       internalID: -7359194806487322313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_8
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 19
+        width: 176
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1044e53219e53654ab30cdffe5da2a4a
+      internalID: 59342208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 351
+        width: 28
+        height: 27
+      alignment: 9
+      pivot: {x: 0.46428573, y: 0.4074074}
+      border: {x: 0, y: 0, z: 0, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7183d39fcccd0db4aaf539db18f7167a
+      internalID: -1701616420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: room1furn_10
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 430
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a42bef907683c941bec0cb618640451
+      internalID: -2059990240
       vertices: []
       indices: 
       edges: []
@@ -325,12 +369,15 @@ TextureImporter:
     nameFileIdTable:
       room1furn_0: -652242192864260221
       room1furn_1: 9212473109020692296
+      room1furn_10: -2059990240
       room1furn_2: -4169599411904777560
       room1furn_3: -7343455766839512667
       room1furn_4: 1628493554670553577
       room1furn_5: -5611259705729330558
       room1furn_6: -8405680792193533834
       room1furn_7: -7359194806487322313
+      room1furn_8: 59342208
+      room1furn_9: -1701616420
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

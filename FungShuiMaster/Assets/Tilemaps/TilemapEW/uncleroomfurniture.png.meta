@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: 91feb69d04ccfb84a864c902303b4505
+guid: 43da14a67c022ad49b91ddecde9d2719
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -424818338738653786
-    second: uncleroom_0
+      213: -9194844114805536905
+    second: uncleroomfurniture_0
   - first:
-      213: -1855508106331902446
-    second: uncleroom_1
+      213: 5513384795656727857
+    second: uncleroomfurniture_1
   - first:
-      213: -5783754367695853512
-    second: uncleroom_2
+      213: -2700715287311544311
+    second: uncleroomfurniture_2
   - first:
-      213: 6108829133362798494
-    second: uncleroom_3
+      213: 1524494056163544976
+    second: uncleroomfurniture_3
   - first:
-      213: -4665693133160234411
-    second: uncleroom_4
+      213: -5893046007936905671
+    second: uncleroomfurniture_4
   - first:
-      213: 7764007383138067187
-    second: uncleroom_5
+      213: 6816379606674360211
+    second: uncleroomfurniture_5
   - first:
-      213: -3168931524355810394
-    second: uncleroom_6
+      213: 3285705178355802120
+    second: uncleroomfurniture_6
+  - first:
+      213: -1116910279401155379
+    second: uncleroomfurniture_7
+  - first:
+      213: 236918197403556696
+    second: uncleroomfurniture_8
+  - first:
+      213: -3772711452811010056
+    second: uncleroomfurniture_9
+  - first:
+      213: 7794172339922705058
+    second: uncleroomfurniture_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 18
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,155 +143,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: uncleroom_0
+      name: uncleroomfurniture_0
       rect:
         serializedVersion: 2
-        x: 67
-        y: 322
+        x: 41
+        y: 381
+        width: 80
+        height: 44
+      alignment: 9
+      pivot: {x: 0.375, y: 0.40909094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777cce37ef9556080800000000000000
+      internalID: -9194844114805536905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uncleroomfurniture_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 420
+        width: 156
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13da82fa24a738c40800000000000000
+      internalID: 5513384795656727857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uncleroomfurniture_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 336
+        width: 70
+        height: 31
+      alignment: 9
+      pivot: {x: 0.54285717, y: 0.6774193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900145451c1258ad0800000000000000
+      internalID: -2700715287311544311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uncleroomfurniture_3
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 330
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f82d75447182510800000000000000
+      internalID: 1524494056163544976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uncleroomfurniture_4
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 344
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e03e3e0e1b73ea0800000000000000
+      internalID: -5893046007936905671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uncleroomfurniture_5
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 225
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397ca063325a89e50800000000000000
+      internalID: 6816379606674360211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uncleroomfurniture_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 244
         width: 20
-        height: 28
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a53961c8fdba1af0800000000000000
-      internalID: -424818338738653786
+      spriteID: 8002f88837b299d20800000000000000
+      internalID: 3285705178355802120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uncleroom_1
+      name: uncleroomfurniture_7
       rect:
         serializedVersion: 2
-        x: 33
-        y: 288
-        width: 20
-        height: 28
+        x: 231
+        y: 249
+        width: 102
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21eaa3c4539ef36e0800000000000000
-      internalID: -1855508106331902446
+      spriteID: dc4df4eb400ff70f0800000000000000
+      internalID: -1116910279401155379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uncleroom_2
+      name: uncleroomfurniture_9
       rect:
         serializedVersion: 2
-        x: 33
-        y: 254
-        width: 20
-        height: 28
+        x: 368
+        y: 156
+        width: 129
+        height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 838ef55db0afbbfa0800000000000000
-      internalID: -5783754367695853512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uncleroom_3
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 169
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9f95a71bbbe6c450800000000000000
-      internalID: 6108829133362798494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uncleroom_4
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 169
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5524107b0d0204fb0800000000000000
-      internalID: -4665693133160234411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uncleroom_5
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 186
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f26479549b4fbb60800000000000000
-      internalID: 7764007383138067187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: uncleroom_6
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 152
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ab1c3d7191b504d0800000000000000
-      internalID: -3168931524355810394
+      spriteID: 8ffd62f1ce2a4abc0800000000000000
+      internalID: -3772711452811010056
       vertices: []
       indices: 
       edges: []
@@ -288,7 +344,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1a4dc80fbb0cf99488023c00cedd3f0f
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +354,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      uncleroom_0: -424818338738653786
-      uncleroom_1: -1855508106331902446
-      uncleroom_2: -5783754367695853512
-      uncleroom_3: 6108829133362798494
-      uncleroom_4: -4665693133160234411
-      uncleroom_5: 7764007383138067187
-      uncleroom_6: -3168931524355810394
+      uncleroomfurniture_0: -9194844114805536905
+      uncleroomfurniture_1: 5513384795656727857
+      uncleroomfurniture_10: 7794172339922705058
+      uncleroomfurniture_2: -2700715287311544311
+      uncleroomfurniture_3: 1524494056163544976
+      uncleroomfurniture_4: -5893046007936905671
+      uncleroomfurniture_5: 6816379606674360211
+      uncleroomfurniture_6: 3285705178355802120
+      uncleroomfurniture_7: -1116910279401155379
+      uncleroomfurniture_8: 236918197403556696
+      uncleroomfurniture_9: -3772711452811010056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
