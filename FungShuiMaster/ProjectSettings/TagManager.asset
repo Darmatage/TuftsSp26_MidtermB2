@@ -10,6 +10,7 @@ TagManager:
   - architecture_Wall
   - architecture_Door
   - item_Plant
+  - floor
   layers:
   - Default
   - TransparentFX

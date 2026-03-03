@@ -12,7 +12,7 @@ public class GameHandler : MonoBehaviour {
       //public int StartPlayerHealth = 100;
       //public TMP_Text healthText;
 
-	public int currentFungScore = 0;
+	public int currentFengScore = 0;
 	public TMP_Text scoreText;
 
       private string sceneName;
@@ -29,14 +29,14 @@ public class GameHandler : MonoBehaviour {
 
 	public void CheckAllFung()
 	{
-		currentFungScore = 0;
+		currentFengScore = 0;
 		//check the beds
 		if (GameObject.FindWithTag("item_Bed") != null)
 		{ 
 			Item_Bed bed = GameObject.FindWithTag("item_Bed").GetComponent<Item_Bed>();
 			bed.CheckFung();
 			int bedScore = bed.thisScore;
-			currentFungScore += bedScore;
+			currentFengScore += bedScore;
 			Debug.Log("BED is: under window? " + bed.isUnderWindow + 
 			", across from door? " + bed.isAcrossFromDoor + 
 			", across from a mirror? " + bed.isAcrossMirror + 
@@ -46,64 +46,28 @@ public class GameHandler : MonoBehaviour {
 		//check the mirror
 
 		//check for plants
-		
 		if (GameObject.FindWithTag("item_Plant") != null)
 		{ 
-			currentFungScore +=20;
 			item_Plant myPlant = GameObject.FindWithTag("item_Plant").GetComponent<item_Plant>();
-			string myPlantType = myPlant.plantType;
-			Debug.Log("PLANT type: " + myPlantType);
+			if (myPlant.isOnFloor)
+			{
+				currentFengScore +=20;
+				string myPlantType = myPlant.plantType;
+				Debug.Log("PLANT type: " + myPlantType);
+			}
+			else {currentFengScore -=20;}
 		}
-		else {currentFungScore -=20;}
+		else {currentFengScore -=20;}
 		
-
+		//Display new score:
 		updateStatsDisplay();
 	}
 
 	public void updateStatsDisplay(){
-            scoreText.text = "SCORE: " + currentFungScore;	
+            scoreText.text = "SCORE: " + currentFengScore;	
 	}
 
-
-
-/*
-      public void playerGetHit(int damage){
-           if (isDefending == false){
-                  playerHealth -= damage;
-                  if (playerHealth >=0){
-                        updateStatsDisplay();
-                  }
-                  if (damage > 0){
-                        //play GetHit animation:
-                        player.GetComponent<PlayerHurt>().playerHit();
-                  }
-            }
-
-           if (playerHealth > StartPlayerHealth){
-                  playerHealth = StartPlayerHealth;
-                  updateStatsDisplay();
-            }
-
-           if (playerHealth <= 0){
-                  playerHealth = 0;
-                  updateStatsDisplay();
-                  playerDies();
-            }
-      }
-*/
       
-      public void playerDies(){
-            //player.GetComponent<PlayerHurt>().playerDead();       //play Death animation
-            lastLevelDied = sceneName;       //allows replaying the Level where you died
-            StartCoroutine(DeathPause());
-      }
-
-      IEnumerator DeathPause(){
-            //player.GetComponent<PlayerMove>().isAlive = false;
-            //player.GetComponent<PlayerJump>().isAlive = false;
-            yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("EndLose");
-      }
 
       public void StartGame() {
             SceneManager.LoadScene("Level1");
