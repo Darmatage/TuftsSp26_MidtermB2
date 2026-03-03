@@ -40,10 +40,48 @@ public class GameHandler : MonoBehaviour {
 			int bedScore = bed.thisScore;
 			currentFengScore += bedScore;
             responseMessage += "BED:\n";
-            responseMessage += "Under window? " + bed.isUnderWindow + "\n";
-            responseMessage += "Across from door? " + bed.isAcrossFromDoor + "\n";
-            responseMessage += "Across from mirror? " + bed.isAcrossMirror + "\n";
-            responseMessage += "Against wall? " + bed.isAgainstWall + "\n\n";
+
+            if (bed.isUnderWindow)
+            {
+                currentFengScore -= 10;
+                responseMessage += "Under window? YES (-10)\n";
+            }
+            else
+            {
+                responseMessage += "Under window? NO (0)\n";
+            }
+
+            if (bed.isAcrossFromDoor)
+            {
+                currentFengScore -= 15;
+                responseMessage += "Across from door? YES (-15)\n";
+            }
+            else
+            {
+                responseMessage += "Across from door? NO (0)\n";
+            }
+
+            if (bed.isAcrossMirror)
+            {
+                currentFengScore -= 20;
+                responseMessage += "Across from mirror? YES (-20)\n";
+            }
+            else
+            {
+                responseMessage += "Across from mirror? NO (0)\n";
+            }
+
+            if (bed.isAgainstWall)
+            {
+                currentFengScore += 10;
+                responseMessage += "Against wall? YES (+10)\n";
+            }
+            else
+            {
+                responseMessage += "Against wall? NO (0)\n";
+            }
+
+            responseMessage += "\n";
 
         }
 
@@ -57,7 +95,7 @@ public class GameHandler : MonoBehaviour {
 			int bookshelfScore = bookshelf.thisScore;
 			currentFengScore += bookshelfScore;
             responseMessage += "BOOKSHELF:\n";
-            responseMessage += "Under window? " + bookshelf.isUnderWindow + "\n";
+            responseMessage += "Blocking window? " + bookshelf.isUnderWindow + "\n";
             responseMessage += "Against wall? " + bookshelf.isAgainstWall + "\n\n";
 
         }
@@ -72,10 +110,10 @@ public class GameHandler : MonoBehaviour {
 				string myPlantType = myPlant.plantType;
                 responseMessage += "PLANT:\n";
                 responseMessage += "Type: " + myPlantType + "\n";
-                responseMessage += "On floor? YES\n\n";
+                responseMessage += "On floor? (+20) YES\n\n";
             }
-            else {currentFengScore -=20;}
-            responseMessage += "PLANT:\nOn floor? NO\n\n";
+            else {currentFengScore -=20;
+            responseMessage += "PLANT:\nOn floor? (-20) NO\n\n";}
 
         }
         else {currentFengScore -=20;}
@@ -87,16 +125,19 @@ public class GameHandler : MonoBehaviour {
             if (myRug.isOnFloor)
             {
                 currentFengScore += 10;
-                string myRugType = myRug.RugType;
-                Debug.Log("Rug type: " + myRugType);
+                responseMessage += "RUG: \n";
+                responseMessage += "Exists? (+10) Yes \n\n";
             }
-            else { currentFengScore -= 10; }
+            else { currentFengScore -= 10;
+                responseMessage += "RUG: Doesn't exist on floor (-10)\n\n";
+            }
         }
         else { currentFengScore -= 10; }
 
+        ResponseText.text = responseMessage;
+
         //Display new score:
         updateStatsDisplay();
-
 	}
 
 	public void updateStatsDisplay(){
