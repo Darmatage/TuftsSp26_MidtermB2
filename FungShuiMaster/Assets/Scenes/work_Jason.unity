@@ -476,6 +476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1934020059}
+  - component: {fileID: 1934020060}
   m_Layer: 0
   m_Name: item_Plant
   m_TagString: item_Plant
@@ -502,6 +503,20 @@ Transform:
   - {fileID: 75068339}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1934020060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934020058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b79021f9bc463a84fb3ddc1452347a82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisScore: 5
+  plantType: ficus
 --- !u!1 &142362549229724584
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +795,7 @@ GameObject:
   - component: {fileID: 753016133147522684}
   - component: {fileID: 8553376298012813248}
   - component: {fileID: 1986910685219248566}
+  - component: {fileID: 8553376298012813249}
   m_Layer: 0
   m_Name: item_Bed
   m_TagString: item_Bed
@@ -2347,6 +2363,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &8553376298012813249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958017533114054584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b92c75b3109fc48b8b5e2a448216b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUnderWindow: 0
+  isAcrossFromDoor: 0
+  isAcrossMirror: 0
+  isAgainstWall: 0
+  thisScore: 0
 --- !u!212 &8574136111841049058
 SpriteRenderer:
   m_ObjectHideFlags: 0

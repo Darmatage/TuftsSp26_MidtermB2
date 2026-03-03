@@ -63,16 +63,16 @@ public class Item_Bed : MonoBehaviour
 	{
 		thisScore = 0;
 		if (isUnderWindow){thisScore -= 10;} 
-		else{thisScore += 10;}
+		//else{thisScore += 10;}
 
 		if (isAcrossFromDoor){thisScore -= 30;} 
-		else{thisScore += 10;}
+		//else{thisScore += 10;}
 
 		if (isAcrossMirror){thisScore -= 30;} 
-		else{thisScore += 30;}
+		//else{thisScore += 30;}
 
-		if (isAgainstWall){thisScore += 5;} 
-		else{thisScore -= 5;}
+		if (isAgainstWall){thisScore += 30;} 
+		//else{thisScore -= 5;}
 
 	}
 

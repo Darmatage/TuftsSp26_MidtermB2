@@ -31,25 +31,28 @@ public class GameHandler : MonoBehaviour {
 	{
 		currentFungScore = 0;
 		//check the beds
-	/*
-		//Item_Bed bed = GameObject.FindWithTag("item_Bed").GetComponent<Item_Bed>();
-		//bed.CheckFung();
-		//int bedScore = bed.thisScore;
-		GameObject bed = GameObject.FindWithTag("item_Bed");
-		Item_Bed bedItem = bed.GetComponent<Item_Bed>();
-		//.CheckFung();
-		int bedScore = bedItem.thisScore;
-		currentFungScore += bedScore;
-	*/
+		if (GameObject.FindWithTag("item_Bed") != null)
+		{ 
+			Item_Bed bed = GameObject.FindWithTag("item_Bed").GetComponent<Item_Bed>();
+			bed.CheckFung();
+			int bedScore = bed.thisScore;
+			currentFungScore += bedScore;
+			Debug.Log("BED is: under window? " + bed.isUnderWindow + 
+			", across from door? " + bed.isAcrossFromDoor + 
+			", across from a mirror? " + bed.isAcrossMirror + 
+			", against a Wall?" + bed.isAgainstWall);
+		}
+
 		//check the mirror
 
 		//check for plants
+		
 		if (GameObject.FindWithTag("item_Plant") != null)
 		{ 
 			currentFungScore +=20;
-			string myPlantType = GameObject.FindWithTag("item_Plant").GetComponent<item_Plant>().plantType;
+			item_Plant myPlant = GameObject.FindWithTag("item_Plant").GetComponent<item_Plant>();
+			string myPlantType = myPlant.plantType;
 			Debug.Log("PLANT type: " + myPlantType);
-		
 		}
 		else {currentFungScore -=20;}
 		
