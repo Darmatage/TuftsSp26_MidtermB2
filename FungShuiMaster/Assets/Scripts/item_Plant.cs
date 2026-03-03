@@ -5,8 +5,10 @@ using System.Collections.Generic;
 public class item_Plant : MonoBehaviour
 {
 
-	public int thisScore = 5;
+	public int thisScore = 20;
 	public string plantType = "ficus";
+
+	public bool isOnFloor = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,9 +16,22 @@ public class item_Plant : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.gameObject.tag == "floor")
+		{
+			isOnFloor = true;
+		}
     }
+
+	void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "floor")
+		{
+			isOnFloor = false;
+		}
+    }
+
+
+
 }
