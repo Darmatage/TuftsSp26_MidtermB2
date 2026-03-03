@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - GameHandler
+  - item_Bed
+  - architecture_Window
+  - architecture_Wall
+  - architecture_Door
+  - item_Plant
   layers:
   - Default
   - TransparentFX
