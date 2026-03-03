@@ -11,6 +11,7 @@ TagManager:
   - architecture_Door
   - item_Plant
   - floor
+  - item_Bookshelf
   layers:
   - Default
   - TransparentFX

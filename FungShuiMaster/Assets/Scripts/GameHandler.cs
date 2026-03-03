@@ -45,6 +45,20 @@ public class GameHandler : MonoBehaviour {
 
 		//check the mirror
 
+            //check the bookself
+            if (GameObject.FindWithTag("item_Bookshelf") != null)
+		{ 
+			item_Bookshelf myBookshelf = GameObject.FindWithTag("item_Bookshelf").GetComponent<item_Bookshelf>();
+			if (myBookshelf.isOnFloor)
+			{
+				currentFengScore +=10;
+				string myBookshelfType = myBookshelf.BookshelfType;
+				Debug.Log("BOOKSHELF type: " + myBookshelfType);
+			}
+			else {currentFengScore -=10;}
+		}
+		else {currentFengScore -=10;}
+
 		//check for plants
 		if (GameObject.FindWithTag("item_Plant") != null)
 		{ 
