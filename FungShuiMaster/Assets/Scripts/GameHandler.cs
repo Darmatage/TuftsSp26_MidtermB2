@@ -39,26 +39,26 @@ public class GameHandler : MonoBehaviour {
 			bed.CheckFung();
 			int bedScore = bed.thisScore;
 			currentFengScore += bedScore;
-			Debug.Log("BED is: under window? " + bed.isUnderWindow + 
-			", across from door? " + bed.isAcrossFromDoor + 
-			", across from a mirror? " + bed.isAcrossMirror + 
-			", against a Wall?" + bed.isAgainstWall);
-		}
+            responseMessage += "BED:\n";
+            responseMessage += "Under window? " + bed.isUnderWindow + "\n";
+            responseMessage += "Across from door? " + bed.isAcrossFromDoor + "\n";
+            responseMessage += "Across from mirror? " + bed.isAcrossMirror + "\n";
+            responseMessage += "Against wall? " + bed.isAgainstWall + "\n\n";
 
-		//check the mirror
+        }
 
-         //check the bookself
+        //check the mirror
+
+        //check the bookself
         if (GameObject.FindWithTag("item_Bookshelf") != null)
 		{ 
 			item_Bookshelf bookshelf = GameObject.FindWithTag("item_Bookshelf").GetComponent<item_Bookshelf>();
 			bookshelf.CheckFung();
 			int bookshelfScore = bookshelf.thisScore;
 			currentFengScore += bookshelfScore;
-            responseMessage += "BED:\n";
-            responseMessage += "Under window? " + bed.isUnderWindow + "\n";
-            responseMessage += "Across from door? " + bed.isAcrossFromDoor + "\n";
-            responseMessage += "Across from mirror? " + bed.isAcrossMirror + "\n";
-            responseMessage += "Against wall? " + bed.isAgainstWall + "\n\n";
+            responseMessage += "BOOKSHELF:\n";
+            responseMessage += "Under window? " + bookshelf.isUnderWindow + "\n";
+            responseMessage += "Against wall? " + bookshelf.isAgainstWall + "\n\n";
 
         }
 
@@ -70,11 +70,15 @@ public class GameHandler : MonoBehaviour {
 			{
 				currentFengScore +=20;
 				string myPlantType = myPlant.plantType;
-				Debug.Log("PLANT type: " + myPlantType);
-			}
-			else {currentFengScore -=20;}
-		}
-		else {currentFengScore -=20;}
+                responseMessage += "PLANT:\n";
+                responseMessage += "Type: " + myPlantType + "\n";
+                responseMessage += "On floor? YES\n\n";
+            }
+            else {currentFengScore -=20;}
+            responseMessage += "PLANT:\nOn floor? NO\n\n";
+
+        }
+        else {currentFengScore -=20;}
 
         //check for rug
         if (GameObject.FindWithTag("item_Rug") != null)
@@ -92,6 +96,7 @@ public class GameHandler : MonoBehaviour {
 
         //Display new score:
         updateStatsDisplay();
+
 	}
 
 	public void updateStatsDisplay(){
