@@ -87,6 +87,19 @@ public class GameHandler : MonoBehaviour {
 
         //check the mirror
 
+        //check the desk
+         if (GameObject.FindWithTag("item_Desk") != null)
+		{ 
+			item_Desk Desk = GameObject.FindWithTag("item_Desk").GetComponent<item_Desk>();
+			Desk.CheckFung();
+			int deskScore = Desk.thisScore;
+			currentFengScore += deskScore;
+            responseMessage += "DESK:\n";
+            responseMessage += "Against wall? " + Desk.isAgainstWall + "\n\n";
+
+            }
+      
+
         //check the bookself
         if (GameObject.FindWithTag("item_Bookshelf") != null)
 		{ 
