@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: wallfloortilesuncle_4
+  m_Name: uncleroom_4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -815015831101990612, guid: bf385591d649ec243a8abb3bb18e1082, type: 3}
+  m_Sprite: {fileID: -4665693133160234411, guid: 91feb69d04ccfb84a864c902303b4505, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
