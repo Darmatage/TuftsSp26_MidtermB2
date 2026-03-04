@@ -94,9 +94,18 @@ public class GameHandler : MonoBehaviour {
 			Desk.CheckFung();
 			int deskScore = Desk.thisScore;
 			currentFengScore += deskScore;
-            responseMessage += "DESK:\n";
-            responseMessage += "Against wall? " + Desk.isAgainstWall + "\n\n";
-
+            if (Desk.isAgainstWall)
+            {
+                currentFengScore += 10;
+                responseMessage += "DESK:\n";
+                responseMessage += "Against wall? YES (+10)\n";
+            }
+            else
+            {
+                currentFengScore = 0;
+                responseMessage += "DESK:\n";
+                responseMessage += "Against wall? NO (0) \n\n";
+            }
             }
       
 
@@ -108,9 +117,25 @@ public class GameHandler : MonoBehaviour {
 			int bookshelfScore = bookshelf.thisScore;
 			currentFengScore += bookshelfScore;
             responseMessage += "BOOKSHELF:\n";
-            responseMessage += "Blocking window? " + bookshelf.isUnderWindow + "\n";
-            responseMessage += "Against wall? " + bookshelf.isAgainstWall + "\n\n";
+            if (bookshelf.isAgainstWall)
+            {
+                currentFengScore += 10;
+                responseMessage += "Against wall? YES (+10)\n";
+            }
+            else
+            {
+                responseMessage += "Against wall? NO (0)\n";
+            }
 
+            if (bookshelf.isUnderWindow)
+            {
+                currentFengScore -= 10;
+                responseMessage += "Under window? YES (-10)\n";
+            }
+            else
+            {
+                responseMessage += "Under window? NO (0)\n";
+            }
         }
 
         //check for plants
@@ -139,10 +164,10 @@ public class GameHandler : MonoBehaviour {
             {
                 currentFengScore += 10;
                 responseMessage += "RUG: \n";
-                responseMessage += "Exists? (+10) Yes \n\n";
+                responseMessage += "Exists on floor? (+10) Yes \n\n";
             }
-            else { currentFengScore -= 10;
-                responseMessage += "RUG: Doesn't exist on floor (-10)\n\n";
+            else { currentFengScore = 0;
+                responseMessage += "RUG: Doesn't exist on floor (-0)\n\n";
             }
         }
         else { currentFengScore -= 10; }
